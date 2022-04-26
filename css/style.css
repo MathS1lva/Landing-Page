@@ -1,71 +1,92 @@
-html, body, .main_content{
+*{
     margin: 0px;
     padding: 0px;
-    width: 100%;
-    height: 1390px;
-    position: relative;
+    box-sizing: border-box;
 }
 
+/* Main */
 main{
-    height: 790px;
+    height: 100vh;
     width: 100%;
-    position: absolute;
-    top: 0px;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-image: url(../imagens/background_image.jpg);
-
-}
-
-
-footer{
-    background-color: black;
-
-    height: 600px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    
-}
-
-.text_area{
-    width: 50%;
-    position: absolute;
-    top: 30%;
-    left: 5%;
-}
-.main_text{
-    color: white;
-    font-size: 20px;
-    font-family: arial, sans-serif;
-    line-height: 30px;
     position: relative;
 }
 
+
+.main_left{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text_area{
+    margin: 30px;
+}
+
+.main_right{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main_right img{
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+footer img{
+    display: inline-block;
+    width: 200px;
+    
+}
+
+/* Button style */
 .button{
     color: white;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    text-decoration: none;
     font-weight: 600;
-
     background-image: linear-gradient(to left, #E0AA3E, #d1bb8f);
     box-shadow: 0 0 20px #E0AA3E, 0 0 20px #E0AA3E;
     padding: 15px 80px;
     border-radius: 8px;
     transition: all .3s;
-    position: absolute;
-    bottom: -60px;
-    border-color: transparent;
+    border: none;
 }
 
 .button:hover{
     transform: scale(1.1);
     transition: all .3s;
     background-image: linear-gradient(to right, #E0AA3E, #d1bb8f);
+}
+
+/* Text styles */
+.main_text{
+    padding: auto;
+    color: white;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    line-height: 30px;
 }
 
 .milionario{
@@ -92,43 +113,23 @@ footer{
     line-height: 40px;
 }
 
-.main_art{
-    width: 680px;
-    height: 650px;
-    background-image: url(../imagens/Arte_principal.png);
-    background-size: cover;
-    position: absolute;
-    right: 5%;
-    top: 8%;
-}
-
-.logo{
-    background-image: url(../imagens/Logo_empiricus.png);
-    height: 49px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
 .footer_text{
     color:grey;
     text-align: center;
     font-family: sans-serif;
     font-size: 11px;
     line-height: 20px;
-    padding-right: 20%;
-    padding-left: 20%;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .copyright_text{
     color:grey;
     text-align: center;
     font-family: sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 20px;
-    padding-right: 20%;
-    padding-left: 20%;    
+    padding-bottom: 10px;
 }
 
 .links:link{
@@ -138,69 +139,6 @@ footer{
 .links:visited{
     color: gray;
 }
-
-@media screen and (max-width: 600px) {
-    html, body, .main_content{
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 1000px;
-        position: relative;
-    }
-
-    .footer_text{
-        display: none;
-    }
-
-    footer{
-        background-color: black;
-        height: 20%;
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-    }
-    main
-    {
-        height: 80%;
-        width: 100%;
-        position: absolute;
-        top: 0px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-image: url(../imagens/background_image.jpg);
-    
-    }
-
-    .text_area{
-        width: 90%;
-        transform: scale(.9);
-        position: absolute;
-        top: 55%;
-        left: 5%;
-        margin: 0 auto;
-    }
-
-    .main_art{
-        width: 90%;
-        height: 50%;
-        background-image: url(../imagens/Arte_principal.png);
-        background-size: contain;
-        position: absolute;
-        background-repeat: no-repeat;
-        top: 5%;
-        margin: auto;
-    }
-
-
-
-
-
-    
-}
-
-
 
 
 
