@@ -1,3 +1,4 @@
+@media (min-width:1000px){
 *{
     margin: 0px;
     padding: 0px;
@@ -139,6 +140,6 @@ footer img{
 .links:visited{
     color: gray;
 }
-
+}
 
 
