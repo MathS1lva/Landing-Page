@@ -176,6 +176,7 @@ footer img{
 .button{
     color: white;
     font-family: Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
     background-image: linear-gradient(to left, #E0AA3E, #d1bb8f);
